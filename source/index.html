@@ -16,17 +16,17 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__link">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -102,15 +102,35 @@
           </div>
         </dl>
         <div class="examle__wrapper slider">
-          <figure class="examle__image">
-            <label for="sliderrange">
-              <img class="slider__item" src="https://via.placeholder.com/311x232" width="311" height="232" alt="упитанный кот">
-              <img class="slider__item" src="https://via.placeholder.com/251x240" width="251" height="240" alt="стройный кот">
-            </label>
-          </figure>
-          <span>Было</span>
-          <input class="slider__range" type="range" id="sliderrange" name="sliderrange">
-          <span>Стало</span>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <label for="sliderrange">
+                <img
+                  class="slider__image"
+                  src="https://via.placeholder.com/311x232" width="311" height="232" alt="упитанный кот">
+              </label>
+            </li>
+            <li class="slider__item">
+              <label for="sliderrange">
+                <img
+                  class="slider__image"
+                  src="https://via.placeholder.com/251x240" width="251" height="240" alt="стройный кот">
+              </label>
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <button class="slider__control slider__control--before" type="button">Было</button>
+            <button class="slider__control slider__control--after" type="button">Стало</button>
+          </div>
+          <div class="slider__range range">
+            <div class="range__scale">
+              <div class="range__bar"></div>
+            </div>
+            <button class="range__toggle"
+                    type="button" id="sliderrange"
+                    aria-label="двигать вправо или влево чтобы увидеть трансформацию кота">
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -122,7 +142,9 @@
           <p class="contacts__intro">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="contacts__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="карта проезда к офису Cat Energy">
+        <img
+          class="contacts__map"
+          src="https://via.placeholder.com/320x362" width="320" height="362" alt="карта проезда к офису Cat Energy">
       </section>
       <p class="page-footer__logo" lang="en">
         <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="логотип Cat Energy">
