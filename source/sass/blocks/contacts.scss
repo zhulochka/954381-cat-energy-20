@@ -1,0 +1,20 @@
+.contacts__wrapper {
+  padding: 19px;
+  background-color: $white;
+}
+
+.contacts__intro {
+  font-size: 16px;
+  font-family: $main-font;
+  color: $dark-color-4;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  line-height: 20px;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 362px;
+}

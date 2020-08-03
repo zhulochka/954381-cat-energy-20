@@ -1,0 +1,29 @@
+.button {
+  padding: 9px;
+  text-transform: uppercase;
+  font-family: $main-font;
+}
+
+.button--1 {
+  color: $white;
+  background-color: $theme-color;
+  text-align: center;
+}
+
+.button--2 {
+  font-size: 16px;
+  color: $black;
+}
+
+.button--2-1 {
+  line-height: 16px;
+}
+
+.button--2-2 {
+  line-height: 20px;
+}
+
+.button--no-decor {
+  background-color: transparent;
+  border: none;
+}

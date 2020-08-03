@@ -1,0 +1,35 @@
+.preview__list {
+  padding: 0 20px 0;
+  list-style: none;
+}
+
+.preview__item {
+  position: relative;
+  padding: 8px 33px 18px 20px;
+  background-color: $extra-color-1;
+}
+
+.preview__title {
+  margin-top: 23px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.preview__item::before {
+  content: "";
+  position: absolute;
+  bottom: 187px;
+  left: 22px;
+  width: 50px;
+  height: 53px;
+  background-color: $theme-color;
+}
+
+.preview__description {
+  padding-bottom: 27px;
+}
+
+.preview__link {
+  padding: 15px 20px 20px;
+  border-top: 1px solid $border-color-4;
+}
