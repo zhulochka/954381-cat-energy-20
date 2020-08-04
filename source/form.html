@@ -35,13 +35,13 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main  page-main--secondary page-main--form">
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Данные кота</legend>
-          <ul>
+          <ul class="form__list">
             <li class="form__wrap">
               <label class="form__label form__label--text" for="nickname">Имя:<sup>*</sup></label>
               <input
@@ -56,7 +56,7 @@
                 type="number" name="weight" id="weight" placeholder="7" aria-label="поле для ввода веса кота" required>
             </li>
             <li class="form__wrap">
-              <label class="form__label form__label--number" for="age">>Возраст (лет):</label>
+              <label class="form__label form__label--number" for="age">Возраст (лет):</label>
               <input
                 class="form__control form__control--number"
                 type="number" name="age" id="age" placeholder="7" aria-label="поле для ввода возраста кота">
@@ -65,7 +65,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Выбор программы</legend>
-          <ul>
+          <ul class="form__list">
             <li class="form__wrap">
               <input
                 class="form__control form__control--radio" type="radio" name="program" id="slim" value="slim" checked>
@@ -83,7 +83,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul>
+          <ul class="form__list">
             <li class="form__wrap">
               <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup></label>
               <input
@@ -133,7 +133,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="submit"
+        <button class="form__button button button--8" type="submit"
                 aria-label="отправить заявку на подбор программы питания для вашего кота">
           Отправить заявку
         </button>
@@ -145,7 +145,7 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--secondary">
           <p class="contacts__intro">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>

@@ -1,11 +1,11 @@
 .page-header {
   position: relative;
+  font-family: $main-font;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  font-family: $main-font;
-  color: $black;
   text-transform: uppercase;
+  color: $black;
 }
 
 .page-header__logo {

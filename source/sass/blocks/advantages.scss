@@ -2,6 +2,10 @@
   padding: 0 20px 16px;
 }
 
+.advantages__title {
+  @include title();
+}
+
 .advantages__list {
   list-style: none;
 }

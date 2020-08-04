@@ -14,6 +14,10 @@
   background-size: cover;
 }
 
+.promo__title {
+  @include title($line-height: 36px, $color: $white)
+}
+
 .promo__text {
   line-height: 14px;
   text-transform: uppercase;

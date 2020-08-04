@@ -1,3 +1,11 @@
-.page-main--catalog {
-  padding: 0 20px 0;
+.page-main--secondary {
+  border-top: 1px solid $underline-color-1;
+}
+.page-main__title {
+  @include title($line-height: 36px);
+  @include padding-usual();
+}
+
+.page-main__item--border {
+  border-top: 1px solid $underline-color-1;
 }
