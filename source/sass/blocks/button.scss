@@ -1,31 +1,28 @@
-.button--1 {
-  @include button($font-size: 14px, $line-height: 18px);
+.button {
+  padding: 9px 0;
+  font-family: $main-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
 }
 
-.button--2 {
-  @include button($line-height: 16px, $color: $black, $text-align: left, $background-color: transparent);
+.button--main-theme {
+  color: $white;
+  background-color: $theme-color;
 }
 
-.button--3 {
-  @include button($color: $black, $background-color: transparent);
+.button--extra-theme {
+  color: $dark-color-2;
+  background-color: $extra-color-1;
 }
 
-.button--4 {
-  @include button($color: $dark-color-3, $text-align: left, $background-color: transparent);
+.button--basic-font-parametrs {
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.button--5 {
-  @include button($line-height: 16px);
-}
-
-.button--6 {
-  @include button($line-height: 16px, $color: $dark-color-2, $background-color: $extra-color-1);
-}
-
-.button--7 {
-  @include button($line-height: 16px, $color: $dark-color-3, $background-color: transparent);
-}
-
-.button--8 {
-  @include button();
+.button--extra-font-parametrs {
+  font-size: 14px;
+  line-height: 18px;
 }

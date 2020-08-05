@@ -18,20 +18,6 @@
   color: $black;
 }
 
-@mixin button($font-size: 16px,
-$line-height: 20px, $color: $white, $text-align: center, $background-color: $theme-color, $border: none) {
-  padding: 9px 0;
-  font-family: $main-font;
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $color;
-  text-align: $text-align;
-  background-color: $background-color;
-  border: $border;
-}
-
 @mixin padding-usual($padding-right: 20px, $padding-left: 20px) {
   padding-top: 20px;
   padding-right: $padding-right;

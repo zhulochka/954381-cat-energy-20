@@ -11,24 +11,22 @@
   text-align: center;
 }
 
-.example__number--1 {
-  padding: 14px;
-  text-align: center;
-  border: 1px solid $border-color-2;
-  border-radius: 3px;
-
-  @include big-text($line-height: 24px);
-}
-
 .example__item {
   padding-bottom: 15px;
 }
 
-.example__item--1 {
+.example__item--with-border {
   position: relative;
 }
 
-.example__text--1 {
+.example__item--without-border {
+  line-height: 20px;
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__text--with-border {
   position: absolute;
   top: 48px;
   left: 110px;
@@ -38,13 +36,15 @@
   background-color: $extra-color-2;
 }
 
-.example__item--2 {
-  line-height: 20px;
-  font-family: $main-font;
-  text-transform: uppercase;
-  color: $black;
+.example__number--with-border {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid $border-color-2;
+  border-radius: 3px;
+
+  @include big-text($line-height: 24px);
 }
 
-.example__number--2 {
+.example__number--without-border {
   margin: 0;
 }

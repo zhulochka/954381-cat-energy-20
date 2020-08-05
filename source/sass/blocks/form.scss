@@ -26,11 +26,11 @@
   line-height: 18px;
 }
 
-.form__control--1 {
+.form__control--browser-uncheckable {
   border: 1px solid $border-color-1;
 }
 
-.form__control--2 {
+.form__control--browser-checkable {
   border: 1px solid $border-color-2;
 }
 
@@ -46,6 +46,10 @@
 
 .form__label--radio {
   color: $dark-color-3;
+}
+
+.form__label--checkbox {
+  color: $black;
 }
 
 .form__remark {

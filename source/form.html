@@ -45,20 +45,20 @@
             <li class="form__wrap">
               <label class="form__label form__label--text" for="nickname">Имя:<sup>*</sup></label>
               <input
-                class="form__control form__control--1 form__control--text"
+                class="form__control form__control--browser-uncheckable form__control--text"
                 type="text"
                 name="nickname" id="nickname" placeholder="Барсик" aria-label="поле для ввода имени кота" required>
             </li>
             <li class="form__wrap">
               <label class="form__label form__label--number" for="weight">Вес (кг):<sup>*</sup></label>
               <input
-                class="form__control form__control--1 form__control--number"
+                class="form__control form__control--browser-uncheckable form__control--number"
                 type="number" name="weight" id="weight" placeholder="7" aria-label="поле для ввода веса кота" required>
             </li>
             <li class="form__wrap">
               <label class="form__label form__label--number" for="age">Возраст (лет):</label>
               <input
-                class="form__control form__control--1 form__control--number"
+                class="form__control form__control--browser-uncheckable form__control--number"
                 type="number" name="age" id="age" placeholder="7" aria-label="поле для ввода возраста кота">
             </li>
           </ul>
@@ -87,7 +87,7 @@
             <li class="form__wrap">
               <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup></label>
               <input
-                class="form__control form__control--2 form__control--email"
+                class="form__control form__control--browser-checkable form__control--email"
                 type="email"
                 name="email"
                 id="email" placeholder="kuklachev@gmail.com" aria-label="поле ввода для электронной почты" required>
@@ -95,7 +95,7 @@
             <li class="form__wrap">
               <label class="form__label form__label--tel" for="tel">Телефон:<sup>*</sup></label>
               <input
-                class="form__control form__control--2 form__control--tel"
+                class="form__control form__control--browser-checkable form__control--tel"
                 type="tel"
                 name="tel"
                 id="tel"
@@ -108,7 +108,7 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
           <textarea
-            class="form__control form__control--1 form__control--textarea"
+            class="form__control form__control--browser-uncheckable form__control--textarea"
             name="comments" cols="34" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
@@ -134,8 +134,9 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
-          <button class="form__button button button--8" type="submit"
-                  aria-label="отправить заявку на подбор программы питания для вашего кота">
+          <button
+            class="form__button button button--main-theme button--basic-font-parametrs" type="submit"
+            aria-label="отправить заявку на подбор программы питания для вашего кота">
             Отправить заявку
           </button>
           <p class="form__remark"><sup>*</sup> — Обязательные поля</p>
