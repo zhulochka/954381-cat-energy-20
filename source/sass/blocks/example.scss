@@ -1,33 +1,34 @@
-.examle {
+.example {
   padding: 1px 20px 20px 21px;
   background-color: $extra-color-2;
 }
 
-.examle__title {
+.example__title {
   @include title();
 }
 
-.examle__wrapper {
+.example__wrapper {
   text-align: center;
 }
 
-.examle__number--1 {
+.example__number--1 {
   padding: 14px;
   text-align: center;
   border: 1px solid $border-color-2;
   border-radius: 3px;
+
   @include big-text($line-height: 24px);
 }
 
-.examle__item {
+.example__item {
   padding-bottom: 15px;
 }
 
-.examle__item--1 {
+.example__item--1 {
   position: relative;
 }
 
-.examle__text--1 {
+.example__text--1 {
   position: absolute;
   top: 48px;
   left: 110px;
@@ -37,13 +38,13 @@
   background-color: $extra-color-2;
 }
 
-.examle__item--2 {
+.example__item--2 {
   line-height: 20px;
   font-family: $main-font;
   text-transform: uppercase;
   color: $black;
 }
 
-.examle__number--2 {
+.example__number--2 {
   margin: 0;
 }

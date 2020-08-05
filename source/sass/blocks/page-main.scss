@@ -1,11 +1,19 @@
 .page-main--secondary {
-  border-top: 1px solid $underline-color-1;
+  @include border();
 }
+
 .page-main__title {
   @include title($line-height: 36px);
   @include padding-usual();
 }
 
 .page-main__item--border {
-  border-top: 1px solid $underline-color-1;
+  @include border($color: $darker-extra-color-1);
+}
+
+.page-main__text {
+  font-family: $main-font;
+  color: $black;
+  text-transform: uppercase;
+  padding: 0 20px 0 20px;
 }

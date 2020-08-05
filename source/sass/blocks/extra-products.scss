@@ -1,0 +1,22 @@
+.extra-products {
+  @include padding-usual();
+}
+
+.extra-products__title {
+  @include big-text($text-transform: none);
+}
+
+.extra-products__list {
+  list-style: none;
+  padding: 0;
+
+  @include border($side: top, $color: $border-color-2);
+}
+
+.extra-products__item {
+  @include border($side: bottom, $color: $border-color-2);
+}
+
+.extra-product__info {
+  line-height: 14px;
+}

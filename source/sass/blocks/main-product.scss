@@ -1,0 +1,8 @@
+.main-product {
+  @include padding-usual();
+}
+
+.main-product__info {
+  font-size: 12px;
+  line-height: 16px;
+}

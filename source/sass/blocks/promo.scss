@@ -15,7 +15,7 @@
 }
 
 .promo__title {
-  @include title($line-height: 36px, $color: $white)
+  @include title($line-height: 36px, $color: $white);
 }
 
 .promo__text {

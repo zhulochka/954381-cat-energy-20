@@ -39,4 +39,6 @@ $line-height: 20px, $color: $white, $text-align: center, $background-color: $the
   padding-left: $padding-left;
 }
 
-
+@mixin border($side: top, $color: $border-color-5) {
+  border-#{$side}: 1px solid $color;
+}

@@ -13,6 +13,7 @@
   margin-top: 23px;
   margin-bottom: 28px;
   text-align: center;
+
   @include big-text($line-height: 37px);
 }
 
@@ -32,5 +33,6 @@
 
 .preview__link {
   padding: 15px 0 15px;
-  border-top: 1px solid $border-color-4;
+
+  @include border();
 }
