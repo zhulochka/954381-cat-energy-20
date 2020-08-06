@@ -1,0 +1,17 @@
+.main-product {
+  @include padding-usual();
+}
+
+.main-product__link {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $dark-color-3;
+}
+
+.main-product__info {
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -1,0 +1,33 @@
+.extra-products {
+  @include padding-usual();
+}
+
+.extra-products__title {
+  @include big-text($text-transform: none);
+}
+
+.extra-products__list {
+  list-style: none;
+  padding: 0;
+
+  @include border($side: top, $color: $border-color-2);
+}
+
+.extra-products__item {
+  padding-bottom: 13px;
+
+  @include border($side: bottom, $color: $border-color-2);
+}
+
+.extra-product__link {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $dark-color-3;
+}
+
+.extra-product__info {
+  line-height: 14px;
+}

@@ -1,0 +1,28 @@
+.button {
+  padding: 9px 0;
+  font-family: $main-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+.button--main-theme {
+  color: $white;
+  background-color: $theme-color;
+}
+
+.button--extra-theme {
+  color: $dark-color-2;
+  background-color: $extra-color-1;
+}
+
+.button--basic-font-parametrs {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--extra-font-parametrs {
+  font-size: 14px;
+  line-height: 18px;
+}

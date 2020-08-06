@@ -1,0 +1,29 @@
+.main-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-products__item {
+  @include border($side: bottom, $color: $darker-extra-color-1);
+}
+
+.main-products__show-else {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.main-products__title {
+  padding: 9px 0;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $dark-color-4;
+}
+
+.main-products__text {
+  font-size: 12px;
+  line-height: 16px;
+}

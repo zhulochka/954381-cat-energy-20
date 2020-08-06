@@ -1,0 +1,14 @@
+.page-header {
+  position: relative;
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 3px 20px 15px;
+}

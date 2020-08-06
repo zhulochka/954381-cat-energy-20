@@ -1,0 +1,30 @@
+@mixin title($line-height: 40px, $color: $black) {
+  font-style: normal;
+  font-size: 36px;
+  line-height: $line-height;
+  font-weight: 400;
+  font-family: $main-font;
+  color: $color;
+  text-transform: none;
+}
+
+@mixin big-text($line-height: 24px, $text-transform: uppercase) {
+  font-style: normal;
+  font-size: 24px;
+  line-height: $line-height;
+  font-weight: 400;
+  font-family: $main-font;
+  text-transform: $text-transform;
+  color: $black;
+}
+
+@mixin padding-usual($padding-right: 20px, $padding-left: 20px) {
+  padding-top: 20px;
+  padding-right: $padding-right;
+  padding-bottom: 25px;
+  padding-left: $padding-left;
+}
+
+@mixin border($side: top, $color: $border-color-5) {
+  border-#{$side}: 1px solid $color;
+}

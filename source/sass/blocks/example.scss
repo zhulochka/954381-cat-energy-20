@@ -1,0 +1,50 @@
+.example {
+  padding: 1px 20px 20px 21px;
+  background-color: $extra-color-2;
+}
+
+.example__title {
+  @include title();
+}
+
+.example__wrapper {
+  text-align: center;
+}
+
+.example__item {
+  padding-bottom: 15px;
+}
+
+.example__item--with-border {
+  position: relative;
+}
+
+.example__item--without-border {
+  line-height: 20px;
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__text--with-border {
+  position: absolute;
+  top: 48px;
+  left: 110px;
+  padding: 0 15px 0;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: $extra-color-2;
+}
+
+.example__number--with-border {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid $border-color-2;
+  border-radius: 3px;
+
+  @include big-text($line-height: 24px);
+}
+
+.example__number--without-border {
+  margin: 0;
+}

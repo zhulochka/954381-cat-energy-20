@@ -1,0 +1,26 @@
+.advantages {
+  padding: 0 20px 16px;
+}
+
+.advantages__title {
+  @include title();
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  padding: 10px 0 16px 40px;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: 220px;
+  width: 60px;
+  height: 60px;
+  background-color: $theme-color;
+}

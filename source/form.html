@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy Главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -34,37 +35,37 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main  page-main--secondary page-main--form">
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Данные кота</legend>
-          <ul>
+          <ul class="form__list">
             <li class="form__wrap">
               <label class="form__label form__label--text" for="nickname">Имя:<sup>*</sup></label>
               <input
-                class="form__control form__control--text"
+                class="form__control form__control--browser-uncheckable form__control--text"
                 type="text"
                 name="nickname" id="nickname" placeholder="Барсик" aria-label="поле для ввода имени кота" required>
             </li>
             <li class="form__wrap">
               <label class="form__label form__label--number" for="weight">Вес (кг):<sup>*</sup></label>
               <input
-                class="form__control form__control--number"
+                class="form__control form__control--browser-uncheckable form__control--number"
                 type="number" name="weight" id="weight" placeholder="7" aria-label="поле для ввода веса кота" required>
             </li>
             <li class="form__wrap">
-              <label class="form__label form__label--number" for="age">>Возраст (лет):</label>
+              <label class="form__label form__label--number" for="age">Возраст (лет):</label>
               <input
-                class="form__control form__control--number"
+                class="form__control form__control--browser-uncheckable form__control--number"
                 type="number" name="age" id="age" placeholder="7" aria-label="поле для ввода возраста кота">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--selecting-program">
           <legend class="visually-hidden">Выбор программы</legend>
-          <ul>
+          <ul class="form__list">
             <li class="form__wrap">
               <input
                 class="form__control form__control--radio" type="radio" name="program" id="slim" value="slim" checked>
@@ -82,11 +83,11 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul>
+          <ul class="form__list">
             <li class="form__wrap">
               <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup></label>
               <input
-                class="form__control form__control--email"
+                class="form__control form__control--browser-checkable form__control--email"
                 type="email"
                 name="email"
                 id="email" placeholder="kuklachev@gmail.com" aria-label="поле ввода для электронной почты" required>
@@ -94,7 +95,7 @@
             <li class="form__wrap">
               <label class="form__label form__label--tel" for="tel">Телефон:<sup>*</sup></label>
               <input
-                class="form__control form__control--tel"
+                class="form__control form__control--browser-checkable form__control--tel"
                 type="tel"
                 name="tel"
                 id="tel"
@@ -106,9 +107,9 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__control form__control--textarea" cols="32" rows="7">
-            Расскажите обо всех повадках кота
-          </textarea>
+          <textarea
+            class="form__control form__control--browser-uncheckable form__control--textarea"
+            name="comments" cols="34" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
@@ -132,11 +133,14 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="submit"
-                aria-label="отправить заявку на подбор программы питания для вашего кота">
-          Отправить заявку
-        </button>
-        <p class="form__remark"><sup>*</sup> — Обязательные поля</p>
+        <fieldset class="form__fieldset">
+          <button
+            class="form__button button button--main-theme button--basic-font-parametrs" type="submit"
+            aria-label="отправить заявку на подбор программы питания для вашего кота">
+            Отправить заявку
+          </button>
+          <p class="form__remark"><sup>*</sup> — Обязательные поля</p>
+        </fieldset>
       </form>
 
     </main>
@@ -144,7 +148,7 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div class="page-footer__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--secondary">
           <p class="contacts__intro">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>

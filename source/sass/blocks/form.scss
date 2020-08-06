@@ -1,0 +1,70 @@
+.form__legend {
+  @include big-text($line-height: 26px, $text-transform: none);
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 20px;
+  border: none;
+}
+
+.form__fieldset--selecting-program {
+  @include border($side: top, $color: $border-color-4);
+  @include border($side: bottom, $color: $border-color-4);
+}
+
+.form__control {
+  padding: 13px 13px 12px 13px;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__control::placeholder {
+  color: $dark-color-2;
+  line-height: 18px;
+}
+
+.form__control--browser-uncheckable {
+  border: 1px solid $border-color-1;
+}
+
+.form__control--browser-checkable {
+  border: 1px solid $border-color-2;
+}
+
+.form__control--radio {
+  border: 1px solid $border-color-2;
+}
+
+.form__label {
+  font-family: $main-font;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__label--radio {
+  color: $dark-color-3;
+}
+
+.form__label--checkbox {
+  color: $black;
+}
+
+.form__remark {
+  font-family: $extra-font;
+  line-height: 16px;
+  color: $black;
+  text-transform: none;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__wrap {
+  margin-bottom: 14px;
+}
