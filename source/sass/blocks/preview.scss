@@ -1,34 +1,119 @@
+.preview {
+  margin: 0;
+}
+
 .preview__list {
-  padding: 0 20px 0;
+  display: grid;
+  gap: 20px;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 }
 
 .preview__item {
-  position: relative;
-  padding: 8px 33px 18px 20px;
+  padding: 7px 20px 18px 20px;
   background-color: $extra-color-1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 54px;
+    padding-right: 283px;
+    padding-bottom: 55px;
+    padding-left: 53px;
+  }
+}
+
+.preview__item--pro {
+  @media (min-width: $tablet-width) {
+    padding-right: 312px;
+  }
 }
 
 .preview__title {
-  margin-top: 23px;
-  margin-bottom: 28px;
-  text-align: center;
+  position: relative;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 16px;
+  padding-left: 70px;
 
   @include big-text($line-height: 37px);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+
+    @include big-text($font-size: 36px, $line-height: 36px);
+  }
 }
 
-.preview__item::before {
+.preview__title::before {
   content: "";
   position: absolute;
-  bottom: 187px;
-  left: 22px;
+  background-color: $theme-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.preview__title--img-slim::before {
+  bottom: 9px;
+  left: 2px;
   width: 50px;
   height: 53px;
-  background-color: $theme-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.preview__title--img-pro::before {
+  bottom: 9px;
+  left: -7px;
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .preview__description {
-  padding-bottom: 27px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 22px;
+    color: $black;
+  }
+}
+
+.preview__item::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-color: $theme-color;
+  }
+}
+
+.preview__item--slim::after {
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    left: 446px;
+    width: 200px;
+    height: 211px;
+  }
+}
+
+.preview__item--pro::after {
+  @media (min-width: $tablet-width) {
+    top: 91px;
+    left: 413px;
+    width: 268px;
+    height: 200px;
+  }
 }
 
 .preview__link {
@@ -40,4 +125,10 @@
   color: $black;
 
   @include border();
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+  }
 }

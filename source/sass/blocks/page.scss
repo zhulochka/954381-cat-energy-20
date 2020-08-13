@@ -1,7 +1,9 @@
 .page__body {
-  width: 320px;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  margin: auto;
   font-size: 14px;
   line-height: 18px;
   font-style: normal;
@@ -9,4 +11,18 @@
   font-family: $extra-font;
   color: $dark-color-2;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 64px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: right top;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
 }

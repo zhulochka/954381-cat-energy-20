@@ -1,15 +1,15 @@
 .button {
-  padding: 9px 0;
+  display: block;
+  padding: 11px 11px;
   font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  border: none;
-}
-
-.button--main-theme {
   color: $white;
   background-color: $theme-color;
+  border: none;
 }
 
 .button--extra-theme {
@@ -17,12 +17,7 @@
   background-color: $extra-color-1;
 }
 
-.button--basic-font-parametrs {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.button--extra-font-parametrs {
+.button--extra-font-parameters {
   font-size: 14px;
   line-height: 18px;
 }

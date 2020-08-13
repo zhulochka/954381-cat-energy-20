@@ -1,7 +1,3 @@
-.extra-products {
-  @include padding-usual();
-}
-
 .extra-products__title {
   @include big-text($text-transform: none);
 }

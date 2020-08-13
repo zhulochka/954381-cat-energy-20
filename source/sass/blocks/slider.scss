@@ -1,4 +1,11 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+}
+
 .slider__list {
+  margin-bottom: 33px;
   padding: 0;
   list-style: none;
 }
@@ -14,6 +21,16 @@
   height: 240px;
 }
 
+.slider__controls {
+  display: flex;
+  padding-left: 36px;
+  padding-right: 35px;
+}
+
+.slider__control--before {
+  margin-right: 13px;
+}
+
 .slider__control {
   font-family: $main-font;
   font-size: 16px;
@@ -22,4 +39,10 @@
   color: $black;
   background-color: transparent;
   border: none;
+}
+
+.slider__range {
+  margin-top: 3px;
+  margin-right: 12px;
+  flex-grow: 1;
 }

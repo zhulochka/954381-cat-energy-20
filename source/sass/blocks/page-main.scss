@@ -1,19 +1,31 @@
+.page-main--primary {
+  @include border();
+
+  @media (min-width: $tablet-width) {
+    @include border($color: transparent);
+  }
+}
+
 .page-main--secondary {
   @include border();
 }
 
 .page-main__title {
   @include title($line-height: 36px);
-  @include padding-usual();
-}
-
-.page-main__item--border {
-  @include border($color: $darker-extra-color-1);
 }
 
 .page-main__text {
   font-family: $main-font;
   color: $black;
   text-transform: uppercase;
-  padding: 0 20px 0 20px;
+}
+
+.page-main__advantages {
+  margin-bottom: 20px;
+}
+
+.page-main__example {
+  @media (min-width: $tablet-width) {
+    @include border();
+  }
 }

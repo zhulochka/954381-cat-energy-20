@@ -1,5 +1,6 @@
 .range {
   position: relative;
+  display: block;
 }
 
 .range__scale {
@@ -16,15 +17,19 @@
   border-radius: 6px;
   margin-top: 3px;
   margin-left: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .range__toggle {
   position: absolute;
+  display: none;
   width: 34px;
   height: 34px;
   margin-top: -23px;
   padding: 0;
-  display: none;
   font-size: 30px;
   line-height: 0;
   color: $theme-color;
@@ -33,4 +38,8 @@
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 $border-color-2;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

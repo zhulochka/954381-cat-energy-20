@@ -3,7 +3,12 @@
 }
 
 .page-footer__wrapper {
-  padding: 0 20px 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 11px;
+  }
 }
 
 .page-footer__logo {
@@ -11,10 +16,16 @@
   text-align: center;
 
   @include border($side: bottom);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-footer__social {
-  text-align: center;
-
   @include border($side: bottom);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

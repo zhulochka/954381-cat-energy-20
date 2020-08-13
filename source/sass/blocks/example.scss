@@ -1,50 +1,152 @@
 .example {
-  padding: 1px 20px 20px 21px;
+  padding-top: 27px;
+  padding-bottom: 35px;
   background-color: $extra-color-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 0;
+    background-color: $white;
+  }
 }
 
 .example__title {
+  margin-top: 0;
+  margin-bottom: 33px;
+
   @include title();
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+
+    @include title($font-size: 60px, $line-height: 60px);
+  }
+}
+
+.example__description {
+  margin-bottom: 25px;
+  padding-right: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content;
+  justify-content: center;
+  column-gap: 12%;
+  row-gap: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: none;
+    row-gap: unset;
+    column-gap: 42px;
+    margin-bottom: 215px;
+    padding-bottom: 20px;
+  }
 }
 
 .example__wrapper {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $extra-color-2;
+  }
 }
 
 .example__item {
-  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .example__item--with-border {
   position: relative;
+  display: grid;
+  grid-template-rows: min-content min-content;
+
+  padding-top: 13px;
+
+  border: 1px solid $border-color-2;
+  border-radius: 3px;
 }
 
 .example__item--without-border {
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+  display: flex;
+  justify-content: center;
   line-height: 20px;
   font-family: $main-font;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: block;
+    padding-top: 11px;
+    padding-left: 132px;
+    font-size: 20px;
+    text-align: right;
+  }
 }
 
 .example__text--with-border {
-  position: absolute;
-  top: 48px;
-  left: 110px;
-  padding: 0 15px 0;
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: -15px;
+  margin-left: 20px;
+  padding: 0 13px 0;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   background-color: $extra-color-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
+}
+
+.example__number {
+  margin: 0;
 }
 
 .example__number--with-border {
-  padding: 14px;
+  grid-row: 1/2;
+  padding: 0 14px 7px;
   text-align: center;
-  border: 1px solid $border-color-2;
-  border-radius: 3px;
 
   @include big-text($line-height: 24px);
+
+  @media (min-width: $tablet-width) {
+    @include big-text($font-size: 30px, $line-height: 37px);
+  }
 }
 
 .example__number--without-border {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.example__text--without-border {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.example__nowrap {
+  white-space: nowrap;
 }

@@ -3,14 +3,11 @@
 }
 
 .form__fieldset {
-  margin: 0;
-  padding: 20px;
   border: none;
 }
 
-.form__fieldset--selecting-program {
-  @include border($side: top, $color: $border-color-4);
-  @include border($side: bottom, $color: $border-color-4);
+.form__list {
+  list-style: none;
 }
 
 .form__control {
@@ -57,12 +54,6 @@
   line-height: 16px;
   color: $black;
   text-transform: none;
-}
-
-.form__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .form__wrap {

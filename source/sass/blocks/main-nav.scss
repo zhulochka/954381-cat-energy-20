@@ -1,3 +1,12 @@
+.main-nav {
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 20px;
@@ -7,6 +16,9 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
-  text-align: center;
-  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

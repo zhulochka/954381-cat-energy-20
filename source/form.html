@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy Главная</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+    <header class="page-header container-tablet container-desktop">
+      <a class="page-header__logo container-mobile" href="index.html">
         <img src="https://via.placeholder.com/33x37" width="33" height="37" alt="логотип Cat Energy">
         <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="">
       </a>
@@ -16,17 +17,17 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item container-mobile">
             <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item container-mobile">
             <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--active container-mobile">
             <a class="site-list__link">
               Подбор программы
             </a>
@@ -36,12 +37,12 @@
     </header>
 
     <main class="page-main  page-main--secondary page-main--form">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="page-main__title container-mobile container-tablet container-desktop">Подбор программы</h1>
+      <p class="page-main__text container-mobile container-tablet container-tablet--narrower container-desktop">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset container-desktop">
           <legend class="visually-hidden">Данные кота</legend>
-          <ul class="form__list">
+          <ul class="form__list container-mobile container-tablet container-tablet--narrower">
             <li class="form__wrap">
               <label class="form__label form__label--text" for="nickname">Имя:<sup>*</sup></label>
               <input
@@ -62,10 +63,7 @@
                 type="number" name="age" id="age" placeholder="7" aria-label="поле для ввода возраста кота">
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--selecting-program">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--selecting-program container-mobile container-tablet container-tablet--narrower">
             <li class="form__wrap">
               <input
                 class="form__control form__control--radio" type="radio" name="program" id="slim" value="slim" checked>
@@ -83,7 +81,9 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul class="form__list">
+          <ul
+            class="form__list
+            container-mobile container-tablet container-tablet--narrower container-desktop container-desktop">
             <li class="form__wrap">
               <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup></label>
               <input
@@ -107,13 +107,15 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
+          <div class="container-mobile container-tablet container-tablet--narrower container-desktop">
           <textarea
             class="form__control form__control--browser-uncheckable form__control--textarea"
             name="comments" cols="34" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list">
+          <ul class="form__list container-mobile container-tablet container-tablet--narrower container-desktop">
             <li class="form__item">
               <input
                 class="form__control form__control--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -133,57 +135,60 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <div class="form__wrapper container-mobile container-tablet container-tablet--narrower container-desktop">
           <button
-            class="form__button button button--main-theme button--basic-font-parametrs" type="submit"
+            class="form__button button" type="submit"
             aria-label="отправить заявку на подбор программы питания для вашего кота">
             Отправить заявку
           </button>
           <p class="form__remark"><sup>*</sup> — Обязательные поля</p>
-        </fieldset>
+        </div>
       </form>
-
     </main>
 
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div class="contacts__wrapper contacts__wrapper--secondary">
-          <p class="contacts__intro">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div
+          class="contacts__wrapper
+          contacts__wrapper--secondary container-mobile container-tablet container-tablet--narrower container-desktop container-desktop--wider">
+          <p class="contacts__intro">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
         </div>
         <img
           class="contacts__map"
           src="https://via.placeholder.com/320x362" width="320" height="362" alt="карта проезда к офису Cat Energy">
       </section>
-      <p class="page-footer__logo" lang="en">
-        <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="логотип Cat Energy">
-      </p>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__button social__button--vkontakte" href="https://vk.com/">
-              <span class="visually-hidden">Cat Energy в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button social__button--instagram" href="https://www.instagram.com/">
-              <span class="visually-hidden">Cat Energy в Инстаграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button social__button--facebook" href="https://www.facebook.com/">
-              <span class="visually-hidden">Cat Energy в Фейсбуке</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <p class="page-footer__copyright copyright" lang="en">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-      </p>
+      <div class="page-footer__wrapper container-mobile container-tablet container-desktop">
+        <p class="page-footer__logo" lang="en">
+          <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="логотип Cat Energy">
+        </p>
+        <section class="page-footer__social social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__button social__button--vkontakte" href="https://vk.com/">
+                <span class="visually-hidden">Cat Energy в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__button social__button--instagram" href="https://www.instagram.com/">
+                <span class="visually-hidden">Cat Energy в Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__button social__button--facebook" href="https://www.facebook.com/">
+                <span class="visually-hidden">Cat Energy в Фейсбуке</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <p class="page-footer__copyright copyright" lang="en">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

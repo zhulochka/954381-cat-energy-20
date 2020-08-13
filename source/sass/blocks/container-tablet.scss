@@ -1,0 +1,13 @@
+.container-tablet {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.container-tablet--narrower {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1px) {
+    padding-right: 65px;
+    padding-left: 71px;
+  }
+}
