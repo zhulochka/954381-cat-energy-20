@@ -1,12 +1,17 @@
 .main-products__list {
+  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .main-products__item {
+
   @include border($side: bottom, $color: $darker-extra-color-1);
+
+
 }
+
 
 .main-products__show-else {
   padding-top: 80px;

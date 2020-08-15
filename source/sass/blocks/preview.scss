@@ -11,18 +11,41 @@
   @media (min-width: $tablet-width) {
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .preview__item {
-  padding: 7px 20px 18px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  padding: 10px 20px 7px 20px;
   background-color: $extra-color-1;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 54px;
-    padding-right: 283px;
-    padding-bottom: 55px;
+    flex-flow: column wrap;
+    justify-content: stretch;
+    align-items: start;
+    padding-top: 57px;
+    padding-right: 275px;
+    padding-bottom: 42px;
     padding-left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: unset;
+    flex-flow: unset;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    padding-right: 51px;
+    padding-top: 39px;
   }
 }
 
@@ -30,14 +53,75 @@
   @media (min-width: $tablet-width) {
     padding-right: 312px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 61px;
+  }
+}
+
+.preview__item::before {
+  content: "";
+  display: block;
+  background-color: $theme-color;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: unset;
+    }
+}
+
+.preview__item--slim::before {
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 19px;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 80px;
+    right: 43px;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+    margin-left: 0;
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.preview__item--pro::before {
+  margin-left: -7px;
+  margin-top: 4px;
+  margin-right: 11px;
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 81px;
+    right: 18px;
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+    margin-right: 45px;
+    margin-left: -19px;
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .preview__title {
-  position: relative;
   margin: 0;
-  padding-top: 23px;
+  padding-top: 20px;
   padding-bottom: 16px;
-  padding-left: 70px;
 
   @include big-text($line-height: 37px);
 
@@ -46,78 +130,33 @@
 
     @include big-text($font-size: 36px, $line-height: 36px);
   }
-}
-
-.preview__title::before {
-  content: "";
-  position: absolute;
-  background-color: $theme-color;
 
   @media (min-width: $tablet-width) {
-    display: none;
+
   }
-}
 
-.preview__title--img-slim::before {
-  bottom: 9px;
-  left: 2px;
-  width: 50px;
-  height: 53px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.preview__title--img-pro::before {
-  bottom: 9px;
-  left: -7px;
-  width: 67px;
-  height: 50px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
 .preview__description {
-  padding-bottom: 28px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
+    //flex-basis: 50%;
     margin-top: 10px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     color: $black;
   }
-}
 
-.preview__item::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    background-color: $theme-color;
-  }
-}
+  @media (min-width: $desktop-width) {
+    margin-top: 41px;
+    margin-bottom: 0;
 
-.preview__item--slim::after {
-  @media (min-width: $tablet-width) {
-    top: 81px;
-    left: 446px;
-    width: 200px;
-    height: 211px;
-  }
-}
-
-.preview__item--pro::after {
-  @media (min-width: $tablet-width) {
-    top: 91px;
-    left: 413px;
-    width: 268px;
-    height: 200px;
   }
 }
 
 .preview__link {
-  padding: 15px 0 15px;
+  flex-grow: 1;
+  padding: 18px 0 15px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
@@ -127,8 +166,14 @@
   @include border();
 
   @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    padding-right: 60px;
     font-size: 20px;
     line-height: 30px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
   }
 }

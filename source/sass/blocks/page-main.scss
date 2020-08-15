@@ -22,10 +22,18 @@
 
 .page-main__advantages {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+  }
 }
 
 .page-main__example {
   @media (min-width: $tablet-width) {
     @include border();
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
