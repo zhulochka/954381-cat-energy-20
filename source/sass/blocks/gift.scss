@@ -1,5 +1,5 @@
 .gift {
-  padding: 186px 0 43px;
+  padding: 58px 0 25px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -8,8 +8,51 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-position: center bottom;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 57px 124px 50px 78px;
+    text-align: left;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      padding: 55px 0 42px;
+      text-align: center;
+    }
+  }
 }
+
+.gift::before {
+  content: "";
+  display: block;
+  margin: 0 auto 50px;
+  width: 78px;
+  height: 80px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+    margin: 0;
+    margin-right: 266px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto 52px;
+    }
+  }
+}
+
 
 .gift__description {
   padding: 0 48px 0;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 0;
+  }
 }

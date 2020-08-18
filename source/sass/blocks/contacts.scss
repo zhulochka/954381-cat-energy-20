@@ -6,6 +6,7 @@
 
 .contacts__wrapper {
   display: flex;
+  justify-content: space-between;
   line-height: 20px;
   padding-top: 13px;
   padding-bottom: 9px;
@@ -21,6 +22,7 @@
     top: 26%;
     margin: 0 760px 0 110px;
     padding-top: 47px;
+    padding-left: 76px;
     padding-right: 80px;
     padding-bottom: 39px;
   }
@@ -31,14 +33,15 @@
 }
 
 .contacts__intro {
+  align-self: center;
   font-size: 16px;
-  margin-right: 17px;
+  margin: 14px 17px 14px 0;
   font-family: $main-font;
   color: $dark-color-4;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-right: 280px;
+    margin: 16px 280px 16px 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -53,12 +56,14 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 7px;
     padding-right: 8px;
     font-size: 16px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    align-self: center;
     text-align: left;
   }
 }

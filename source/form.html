@@ -37,63 +37,78 @@
     </header>
 
     <main class="page-main  page-main--secondary page-main--form">
-      <h1 class="page-main__title container-mobile container-tablet container-desktop">Подбор программы</h1>
-      <p class="page-main__text container-mobile container-tablet container-tablet--narrower container-desktop">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="page-main__title page-main__title--form container-mobile container-tablet container-desktop">Подбор
+        программы</h1>
+      <p class="page-main__text container-mobile container-tablet container-tablet--narrower container-desktop">
+        Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="form__fieldset container-desktop">
+        <fieldset class="form__fieldset form__fieldset--cat-data container-desktop">
           <legend class="visually-hidden">Данные кота</legend>
-          <ul class="form__list container-mobile container-tablet container-tablet--narrower">
-            <li class="form__wrap">
-              <label class="form__label form__label--text" for="nickname">Имя:<sup>*</sup></label>
-              <input
-                class="form__control form__control--browser-uncheckable form__control--text"
-                type="text"
-                name="nickname" id="nickname" placeholder="Барсик" aria-label="поле для ввода имени кота" required>
-            </li>
-            <li class="form__wrap">
-              <label class="form__label form__label--number" for="weight">Вес (кг):<sup>*</sup></label>
-              <input
-                class="form__control form__control--browser-uncheckable form__control--number"
-                type="number" name="weight" id="weight" placeholder="7" aria-label="поле для ввода веса кота" required>
-            </li>
-            <li class="form__wrap">
-              <label class="form__label form__label--number" for="age">Возраст (лет):</label>
-              <input
-                class="form__control form__control--browser-uncheckable form__control--number"
-                type="number" name="age" id="age" placeholder="7" aria-label="поле для ввода возраста кота">
-            </li>
-          </ul>
-          <ul class="form__list form__list--selecting-program container-mobile container-tablet container-tablet--narrower">
-            <li class="form__wrap">
-              <input
-                class="form__control form__control--radio" type="radio" name="program" id="slim" value="slim" checked>
-              <label class="form__label form__label--radio" for="slim">Похудение</label>
-            </li>
-            <li class="form__wrap">
-              <input class="form__control form__control--radio" type="radio" name="program" id="muscle" value="muscle">
-              <label class="form__label form__label--radio" for="muscle">Набор массы</label>
-            </li>
-            <li class="form__wrap">
-              <input class="form__control form__control--radio" type="radio" name="program" id="advice" value="advice">
-              <label class="form__label form__label--radio" for="advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
+          <div class="form__wrapper-cat-data">
+            <ul class="form__list form__list--cat-data container-mobile container-tablet container-tablet--narrower">
+              <li class="form__wrap form__wrap--cat-data">
+                <label
+                  class="form__label  form__label--cat-data form__label--text" for="nickname">Имя:<sup>*</sup></label>
+                <input
+                  class="form__control form__control--cat-data form__control--browser-uncheckable form__control--text"
+                  type="text"
+                  name="nickname" id="nickname" placeholder="Барсик" aria-label="поле для ввода имени кота" required>
+              </li>
+              <li class="form__wrap form__wrap--cat-data">
+                <label class="form__label form__label--cat-data form__label--number" for="weight">Вес
+                  (кг):<sup>*</sup></label>
+                <input
+                  class="form__control form__control--cat-data form__control--browser-uncheckable form__control--number"
+                  type="number" name="weight" id="weight" placeholder="7" aria-label="поле для ввода веса кота"
+                  required>
+              </li>
+              <li class="form__wrap form__wrap--cat-data">
+                <label class="form__label form__label--cat-data form__label--number" for="age">Возраст (лет):</label>
+                <input
+                  class="form__control form__control--cat-data form__control--browser-uncheckable form__control--number"
+                  type="number" name="age" id="age" placeholder="7" aria-label="поле для ввода возраста кота">
+              </li>
+            </ul>
+
+            <ul
+              class="form__list form__list--selecting-program container-mobile container-tablet container-tablet--narrower">
+              <li class="form__wrap form__wrap--selecting-program">
+                <input
+                  class="form__control form__control--radio" type="radio" name="program" id="slim" value="slim" checked>
+                <label class="form__label form__label--radio" for="slim">Похудение</label>
+              </li>
+              <li class="form__wrap form__wrap--selecting-program">
+                <input
+                  class="form__control form__control--radio" type="radio" name="program" id="muscle" value="muscle">
+                <label class="form__label form__label--radio" for="muscle">Набор массы</label>
+              </li>
+              <li class="form__wrap form__wrap--selecting-program">
+                <input
+                  class="form__control form__control--radio" type="radio" name="program" id="advice" value="advice">
+                <label class="form__label form__label--radio" for="advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__fieldset form__fieldset--cat-owner">
+          <legend class="form__legend form__legend--cat-owner">
+            Контактные данные (владельца кота)
+          </legend>
           <ul
-            class="form__list
+            class="form__list form__list--cat-owner
             container-mobile container-tablet container-tablet--narrower container-desktop container-desktop">
-            <li class="form__wrap">
-              <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup></label>
+            <li class="form__wrap form__wrap--cat-owner">
+              <label
+                class="form__label form__label--cat-owner form__label--email"
+                for="email">E-mail:<sup>*</sup></label>
               <input
                 class="form__control form__control--browser-checkable form__control--email"
                 type="email"
                 name="email"
                 id="email" placeholder="kuklachev@gmail.com" aria-label="поле ввода для электронной почты" required>
             </li>
-            <li class="form__wrap">
-              <label class="form__label form__label--tel" for="tel">Телефон:<sup>*</sup></label>
+            <li class="form__wrap form__wrap--cat-owner">
+              <label class="form__label form__label--cat-owner form__label--tel" for="tel">Телефон:<sup>*</sup></label>
               <input
                 class="form__control form__control--browser-checkable form__control--tel"
                 type="tel"
@@ -105,39 +120,42 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Комментарий</legend>
+        <fieldset class="form__fieldset form__fieldset--comments">
+          <legend class="form__legend form__legend--comments">Комментарий</legend>
           <div class="container-mobile container-tablet container-tablet--narrower container-desktop">
           <textarea
             class="form__control form__control--browser-uncheckable form__control--textarea"
-            name="comments" cols="34" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+            name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list container-mobile container-tablet container-tablet--narrower container-desktop">
-            <li class="form__item">
+        <fieldset class="form__fieldset form__fieldset--additionally">
+          <legend class="form__legend form__legend--additionally">Дополнительно</legend>
+          <ul
+            class="form__list form__list--additionally container-mobile container-tablet container-tablet--narrower container-desktop">
+            <li class="form__wrap form__wrap--additionally">
               <input
                 class="form__control form__control--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
+              <label class="form__label form__label--additionally form__label--checkbox" for="sweetener">сахарозаменитель</label>
             </li>
-            <li class="form__item">
+            <li class="form__wrap form__wrap--additionally">
               <input class="form__control form__control--checkbox" type="checkbox" name="water" id="water">
-              <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
+              <label class="form__label form__label--additionally form__label--checkbox" for="water">питьевая
+                вода</label>
             </li>
-            <li class="form__item">
+            <li class="form__wrap form__wrap--additionally">
               <input class="form__control form__control--checkbox" type="checkbox" name="milk" id="milk">
-              <label class="form__label form__label--checkbox" for="milk">молоко</label>
+              <label class="form__label form__label--additionally form__label--checkbox" for="milk">молоко</label>
             </li>
-            <li class="form__item">
+            <li class="form__wrap form__wrap--additionally">
               <input class="form__control form__control--checkbox" type="checkbox" name="vitamins" id="vitamins">
-              <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
+              <label class="form__label form__label--additionally form__label--checkbox" for="vitamins">витамины</label>
             </li>
           </ul>
         </fieldset>
-        <div class="form__wrapper container-mobile container-tablet container-tablet--narrower container-desktop">
+        <div
+          class="form__wrapper--button container-mobile container-tablet container-tablet--narrower container-desktop">
           <button
-            class="form__button button" type="submit"
+            class="form__button button button--form-tablet" type="submit"
             aria-label="отправить заявку на подбор программы питания для вашего кота">
             Отправить заявку
           </button>
@@ -151,9 +169,10 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div
           class="contacts__wrapper
-          contacts__wrapper--secondary container-mobile container-tablet container-tablet--narrower container-desktop container-desktop--wider">
+          contacts__wrapper--secondary container-mobile container-tablet container-tablet--narrower">
           <p class="contacts__intro">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span
+            class="contacts__town">Санкт-Петербург</span></p>
         </div>
         <img
           class="contacts__map"

@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 11px 11px;
+  padding: 10px 11px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
@@ -18,6 +18,14 @@
 }
 
 .button--extra-font-parameters {
+  padding: 11px 11px;
   font-size: 14px;
   line-height: 18px;
+}
+
+.button--form-tablet {
+  @media (min-width: $tablet-width) {
+    padding: 16px 16px;
+    font-size: 20px;
+  }
 }

@@ -64,13 +64,13 @@
   display: block;
   background-color: $theme-color;
 
-    @media (min-width: $tablet-width) {
-      position: absolute;
-    }
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
 
-    @media (min-width: $desktop-width) {
-      position: unset;
-    }
+  @media (min-width: $desktop-width) {
+    position: unset;
+  }
 }
 
 .preview__item--slim::before {
@@ -130,11 +130,6 @@
 
     @include big-text($font-size: 36px, $line-height: 36px);
   }
-
-  @media (min-width: $tablet-width) {
-
-  }
-
 }
 
 .preview__description {
@@ -150,7 +145,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 41px;
     margin-bottom: 0;
-
   }
 }
 

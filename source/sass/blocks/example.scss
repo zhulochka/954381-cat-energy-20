@@ -80,7 +80,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 2/3;
-    justify-self:start;
+    justify-self: start;
 
     grid-template-columns: min-content min-content;
     grid-template-rows: min-content min-content;
@@ -219,13 +219,4 @@
 
 .example__nowrap {
   white-space: nowrap;
-}
-
-.example_one {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 1px;
 }
